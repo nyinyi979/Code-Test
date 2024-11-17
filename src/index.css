@@ -77,7 +77,7 @@
   --text-h2-min: calc(var(--text-h2) * 0.7);
   /*Header 2*/
   --text-h3: 32;
-  --text-h3-min: calc(var(--text-h3) * 0.2);
+  --text-h3-min: calc(var(--text-h3) * 0.5);
   /*Header 3*/
   --text-body-1: 20;
   --text-body-1-min: calc(var(--text-body-1) * 0.8);

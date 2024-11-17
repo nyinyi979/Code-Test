@@ -21,7 +21,7 @@ const SignUpDialogContet = ({ closeDialog, submit }) => {
     } else submit(input)
   }
   return (
-    <form onSubmit={(ev)=>ev.preventDefault()} className="max-w-[400px] flex flex-col gap-4 p-6 text-white">
+    <form onSubmit={(ev)=>ev.preventDefault()} className="sm:max-w-[400px] w-[90vw] flex flex-col gap-4 p-6 text-white">
       <h2 className="heading3 text-center">Sign in to your account!</h2>
       <div className="flex flex-col gap-2">
         <label htmlFor="username" className="text-grey">
@@ -54,7 +54,7 @@ const SignUpDialogContet = ({ closeDialog, submit }) => {
       <a href="#" className="text-primary hover:text-[#4da73b] font-semibold text-center duration-300">
         Forgot password?
       </a>
-      <div className="grid grid-cols-2 gap-2 mt-2">
+      <div className="grid sm:grid-cols-2 gap-2 mt-2">
         <button type="submit" onClick={validateForm} className="btn-primary w-full">
           Submit
         </button>
