@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+:root {
+  --container: 1512px;
+  --container-1416: 1416px;
+  --container-1304: 1304px;
+  --container-1147: 1147px;
+  --container-1126: 1126px;
+  --container-1088: 1088px;
+  --container-1036: 1036px;
+  --container-1416-px: 3.17406%;
+  --container-1304-px: 6.87883%;
+  --container-1147-px: 12.0701%;
+  --container-1152-px: 12.7645%;
+  --container-1126-px: 12.7645%;
+  --container-1088-px: 14.0211%;
+  --container-1036-px: 15.7407%;
+}
+
+@media screen(md) {
+  .container-1416 {
+    padding: 0 var(--container-1416-px);
+  }
+
+  .container-1304 {
+    padding: 0 var(--container-1304-px);
+  }
+
+  .container-1147 {
+    padding: 0 var(--container-1147-px);
+  }
+
+  .container-1152 {
+    padding: 0 var(--container-1152-px);
+  }
+
+  .container-1126 {
+    padding: 0 var(--container-1126-px);
+  }
+
+  .container-1088 {
+    padding: 0 var(--container-1088-px);
+  }
+
+  .container-1036 {
+    padding: 0 var(--container-1036-px);
+  }
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url(/font/SFPro.ttf);
+}
+
+:root {
+  --min-vw: 640;
+  --max-vw: 1512;
+
+  /* convert to px */
+  --min-vw-px: calc(var(--min-vw) * 1px);
+  --max-vw-px: calc(var(--max-vw) * 1px);
+
+  /* font sizes at --max-vw */
+  --text-extra-large: 152;
+  --text-extra-large-min: calc(var(--text-extra-large) * 0.5);
+  --text-large: 88;
+  --text-large-min: calc(var(--text-large) * 0.4);
+  --text-h1: 64;
+  --text-h1-min: calc(var(--text-h1) * 0.7);
+  /*Title/Header 1*/
+  --text-h2: 48;
+  --text-h2-min: calc(var(--text-h2) * 0.7);
+  /*Header 2*/
+  --text-h3: 32;
+  --text-h3-min: calc(var(--text-h3) * 0.2);
+  /*Header 3*/
+  --text-body-1: 20px;
+  --text-body-1-min: calc(var(--text-body-1) * 0.1);
+  /*Body 1*/
+  --body: 16px;
+  /* Body 2 */
+  --reduce-ratio: 0.2;
+}
+
+html {
+  @apply scroll-smooth box-border text-grey;
+}
+
+html,
+body {
+  @apply  text-grey font-normal;
+  font-size: var(--body);
+  font-family: "SF Pro Text";
+}
+
+@layer components {
+  
+  .fluid-fs {
+    --max-fs: var(--text-base);
+    --min-fs: var(--text-base-min);
+
+    --slope: calc((var(--max-fs) - var(--min-fs)) / (var(--max-vw) - var(--min-vw)));
+
+    --min-fs-px: calc(var(--min-fs) * 1px);
+    --max-fs-px: calc(var(--max-fs) * 1px);
+    --fs-px: calc(var(--slope) * (100vw - var(--min-vw-px)) + var(--min-fs-px));
+
+    font-size: clamp(var(--min-fs-px), var(--fs-px), var(--max-fs-px));
+  }
+
+  .text-body-1 {
+    @apply fluid-fs;
+    --max-fs: var(--text-body-1);
+    --min-fs: var(--text-body-1-min);
+    font-weight: 400;
+  }
+  .heading1 {
+    @apply fluid-fs;
+    --max-fs: var(--text-h1);
+    --min-fs: var(--text-h1-min);
+    font-weight: 600;
+  }
+  .heading2 {
+    @apply fluid-fs;
+    --max-fs: var(--text-h2);
+    --min-fs: var(--text-h2-min);
+    font-weight: 600;
+  }
+  .heading3 {
+    @apply fluid-fs;
+    --max-fs: var(--text-h3);
+    --min-fs: var(--text-h3-min);
+    font-weight: 600;
+  }
+  .text-large {
+    @apply fluid-fs;
+    --max-fs: var(--text-large);
+    --min-fs: var(--text-large-min);
+    font-weight: 600;
+  }
+  .text-extra-large {
+    @apply fluid-fs;
+    --max-fs: var(--text-extra-large);
+    --min-fs: var(--text-extra-large-min);
+    font-weight: 600;
+  }
+  .btn {
+    @apply w-fit sm:px-8 px-6 sm:py-3 py-2 rounded-xl font-semibold duration-300;
+  }
+  .btn-ghost {
+    @apply btn border border-primary hover:bg-primary text-white hover:text-black;
+  }
+  .btn-ghost-black {
+    @apply btn border border-black hover:bg-[#4da73b] hover:border-primary text-black hover:text-white;
+  }
+  .btn-primary {
+    @apply btn bg-primary hover:bg-[#4da73b] text-black;
+  }
+}
