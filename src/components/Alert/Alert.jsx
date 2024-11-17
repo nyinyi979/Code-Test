@@ -2,7 +2,7 @@ export function SuccessAlertBox({}) {
     return (
       <div
         id="s_popup"
-        className={`rounded-[15px] fixed -top-96 left-[50%] translate-x-[-50%] p-4 opacity-0 border border-primary bg-primary text-green-900 z-[1001] transition-all duration-500 shadow-dropdown`}
+        className={`rounded-[15px] fixed -top-96 left-[50%] translate-x-[-50%] p-4 opacity-0 border border-primary bg-primary text-green-900 z-[1001] transition-all duration-500`}
       />
     );
   }
@@ -10,7 +10,7 @@ export function SuccessAlertBox({}) {
     return (
       <div
         id="e_popup"
-        className={`rounded-[15px] fixed -top-96 left-[50%] translate-x-[-50%] p-4 opacity-0 border border-red-400 bg-red-200 text-white z-[1001] transition-all duration-500 shadow-drawer`}
+        className={`rounded-[15px] fixed -top-96 left-[50%] translate-x-[-50%] p-4 opacity-0 border border-red-400 bg-red-200 text-white z-[1001] transition-all duration-500`}
       />
     );
   }

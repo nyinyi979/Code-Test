@@ -15,7 +15,7 @@ const Dialog = ({ children, open, closeDialog }) => {
   return (
     <div
       onClick={closeDialog}
-      className={`fixed top-0 left-0 w-full h-full bg-black/30 transition-opacity ${
+      className={`fixed top-0 left-0 w-full h-full bg-black/30 transition-opacity overflow-hidden ${
         open ? "opacity-100" : "opacity-0"
       }`}
     >

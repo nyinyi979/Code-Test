@@ -153,10 +153,10 @@ body {
     @apply w-fit sm:px-8 px-6 sm:py-3 py-2 rounded-xl font-semibold duration-300;
   }
   .btn-ghost {
-    @apply btn border border-primary hover:bg-primary text-white hover:text-black;
+    @apply btn border border-primary hover:bg-[#c3fab8] text-white hover:text-black;
   }
   .btn-ghost-black {
-    @apply btn border border-black hover:bg-[#4da73b] hover:border-primary text-black hover:text-white;
+    @apply btn border border-black hover:bg-[#c3fab8] hover:border-primary text-black;
   }
   .btn-primary {
     @apply btn bg-primary hover:bg-[#4da73b] text-black;

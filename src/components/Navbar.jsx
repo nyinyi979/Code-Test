@@ -17,26 +17,26 @@ const NavBar = () => {
     dialog: false,
   });
   const openDialog = () => {
+    document.body.style.overflowY = "hidden";
     setDialogOpen({ bg: true, dialog: false });
-    document.body.style.position = "fixed";
     const timer = setTimeout(() => {
       setDialogOpen({
         bg: true,
         dialog: true,
       });
     }, 100);
-    () => clearTimeout(timer);
+    return () => clearTimeout(timer);
   };
   const closeDialog = () => {
+    document.body.style.overflowY = "auto";
     setDialogOpen({ bg: true, dialog: false });
-    document.body.style.position = "relative";
     const timer = setTimeout(() => {
       setDialogOpen({
         bg: false,
         dialog: false,
       });
     }, 100);
-    () => clearTimeout(timer);
+    return () => clearTimeout(timer);
   };
   const [lastScrollTop, setLastScrollTop] = useState(0);
   const openDrawer = () => {
@@ -62,7 +62,7 @@ const NavBar = () => {
   const { username, setUsername } = useUserStore();
   const submitForm = ({username}) => {
     setUsername(username);
-    showSuccessAlert("Successful login");
+    showSuccessAlert(`Welcome back ${username}!`);
     closeDialog();
   };
   useEffect(() => {

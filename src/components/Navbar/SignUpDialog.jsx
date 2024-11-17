@@ -51,8 +51,8 @@ const SignUpDialogContet = ({ closeDialog, submit }) => {
           required
         />
       </div>
-      <a href="#" className="text-primary font-semibold text-center">
-        Forgot password ?
+      <a href="#" className="text-primary hover:text-[#4da73b] font-semibold text-center duration-300">
+        Forgot password?
       </a>
       <div className="grid grid-cols-2 gap-2 mt-2">
         <button type="submit" onClick={validateForm} className="btn-primary w-full">

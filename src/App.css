@@ -5,6 +5,7 @@ html, body{
   position: relative;
   @apply bg-background;
 }
+
 .scale {
   @apply scale-100 opacity-100 -translate-y-0 ease-in-out duration-500;
 }
