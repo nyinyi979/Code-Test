@@ -4,8 +4,8 @@ const BetterJob = () => {
   useIntersection("#better_job","scale");
   return (
     <section id="better_job" className="container-1416 h-fit rounded-xl text-black lg:mb-20 mb-10">
-        <div className="flex flex-col items-center justify-center md:pt-14 pt-8 bg-primary rounded-xl">
-          <h2 className="md:w-[420px] heading2 text-center">
+        <div className="flex flex-col items-center justify-center md:pt-14 pt-8 bg-primary rounded-xl md:mx-0 mx-[5%]">
+          <h2 className="sm:w-[420px] heading2 text-center">
             Submit Better job applications
           </h2>
           <h1 className="text-center text-extra-large">

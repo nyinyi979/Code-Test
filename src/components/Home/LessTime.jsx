@@ -17,7 +17,7 @@ const LastTime = () => {
           <button className="btn-ghost mx-auto">Create An Account</button>
         </div>
 
-        <div className="grid md:w-full w-[95%] lg:grid-cols-3 sm:grid-cols-2 gap-8">
+        <div className="grid md:w-full w-[90%] lg:grid-cols-3 sm:grid-cols-2 gap-8">
           {LessTimeBoxes.map((box) => (
             <Card key={box.id} box={box} />
           ))}

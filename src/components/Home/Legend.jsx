@@ -10,7 +10,7 @@ const Legend = () => {
             <p className="text-primary">Win your dream job</p>
             <p className="text-white">with PostJob</p>
           </div>
-          <p className="md:w-[452px] mx-auto text-center leading-6">
+          <p className="sm:w-[474px] mx-auto text-center leading-6">
             Submit better job app — 10x faster. AI cover letter generator,
             resume keyword checker, outreach message writer, and more. Powered
             by GPT
@@ -24,7 +24,7 @@ const Legend = () => {
             <button className="text-nowrap btn-primary">Start For Free</button>
           </div>
         </div>
-        <div className="grid lg:grid-cols-3 grid-cols-1 md:w-full w-[95%] mx-auto gap-8">
+        <div className="grid lg:grid-cols-3 grid-cols-1 md:w-full w-[90%] mx-auto gap-8">
           {InformationBoxes.map((box) => (
             <Card box={box} key={box.id} />
           ))}
