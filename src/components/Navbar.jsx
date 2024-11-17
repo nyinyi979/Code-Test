@@ -87,10 +87,10 @@ const NavBar = () => {
       } ease-linear duration-300`}
     >
       <div className="flex gap-10 lg:pt-16 pt-10 pb-4 items-center lg:justify-center justify-between sm:px-0 px-6">
-        <div className="flex gap-1 p-3 font-medium text-white">
+        <a href="/" className="flex gap-1 p-3 font-medium text-white">
           <img src="/images/icon/logo.svg" />
           PostJob
-        </div>
+        </a>
         <div className="lg:flex hidden xl:gap-6 gap-2 font-semibold">
           {NavLinks.map((link) => (
             <a
