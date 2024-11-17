@@ -11,7 +11,7 @@ const NavBar = () => {
     bg: false,
     drawer: false,
   });
-  const [navbarOpen, setNavbarOpen] = useState(false);
+  const [navbarOpen, setNavbarOpen] = useState(true);
   const [dialogOpen, setDialogOpen] = useState({
     bg: false,
     dialog: false,
@@ -82,11 +82,11 @@ const NavBar = () => {
   }, [lastScrollTop]);
   return (
     <header
-      className={`container-1304 sticky bg-background z-[1000] ${
-        navbarOpen ? "-top-0" : "-top-32"
-      } ease-linear duration-100`}
+      className={`container-1304 w-full fixed left-0 bg-background z-[1000] ${
+        navbarOpen ? "top-0" : "-top-32"
+      } ease-linear duration-300`}
     >
-      <div className="flex gap-10 lg:pt-16 pt-10 pb-4 items-center lg:justify-center justify-between">
+      <div className="flex gap-10 lg:pt-16 pt-10 pb-4 items-center lg:justify-center justify-between sm:px-0 px-6">
         <div className="flex gap-1 p-3 font-medium text-white">
           <img src="/images/icon/logo.svg" />
           PostJob

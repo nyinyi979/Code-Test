@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="container-1126 w-full flex flex-col sm:gap-10 gap-8 items-center justify-center bg-primary">
       <div className="sm:w-[456px] flex flex-col gap-2 pt-12  text-background sm:px-0 px-5">
         <h1 className="heading1 font-semibold text-center">What's next</h1>
-        <p className="text-black">
+        <p className="text-black text-center">
           Submit better job app — 10x faster. AI cover letter generator, resume
           keyword checker, outreach message writer, and more. Powered by GPT
         </p>

@@ -3,7 +3,7 @@ import Card from "../Card/Card";
 
 const Legend = () => {
   return (
-    <div className="container-1147 mx-auto z-[1] block md:mt-20 mt-10 lg:mb-[100px] mb-16">
+    <div className="container-1147 mx-auto z-[1] block md:mt-[210px] mt-36 lg:mb-[100px] mb-16">
       <div className="flex flex-col gap-[56px] ">
         <div className="flex flex-col gap-5">
           <div className="w-full text-large text-center">
