@@ -15,10 +15,10 @@ const Legend = () => {
             resume keyword checker, outreach message writer, and more. Powered
             by GPT
           </p>
-          <div className="relative sm:w-[519px] w-[80%] flex md:flex-row flex-col lg:gap-0 gap-3 items-center justify-center mx-auto pl-4 pr-2 py-2 rounded-2xl lg:border lg:border-grey">
+          <div className="relative sm:w-[519px] w-[80%] flex sm:flex-row flex-col sm:gap-0 gap-3 items-center justify-center mx-auto pl-4 pr-2 py-2 rounded-2xl sm:border md:border-grey">
             <input
               type="email"
-              className="w-full h-11 outline-none pl-6 bg-transparent placeholder:text-lg placeholder:text-grey z-[1] lg:border-transparent border border-grey rounded-lg"
+              className="w-full h-11 outline-none pl-6 bg-transparent placeholder:text-lg placeholder:text-grey z-[1] sm:border-transparent border border-grey rounded-lg"
               placeholder="Your Email"
             />
             <button className="text-nowrap btn-primary">Start For Free</button>

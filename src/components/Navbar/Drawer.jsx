@@ -30,7 +30,7 @@ const Drawer = ({ open, closeDrawer, openDialog }) => {
             </a>
           ))}
           {username ? (
-            <button onClick={()=>setUsername(null)} className="btn-ghost">
+            <button onClick={()=>setUsername(null)} className="btn-ghost border-red-500 hover:bg-red-300 duration-300">
               Logout
             </button>
           ) : (
